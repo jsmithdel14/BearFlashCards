@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/Qbut4"
+        android:layout_width="138dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/buttopt4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Qbut2" />
+
+    <Button
+        android:id="@+id/Qbut3"
+        android:layout_width="138dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginBottom="68dp"
+        android:text="@string/buttopt3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Qbut4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Qbut1" />
+
+    <Button
+        android:id="@+id/Qbut2"
+        android:layout_width="138dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="212dp"
+        android:text="@string/buttopt2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Qbut1" />
+
+    <TextView
+        android:id="@+id/Q_text"
+        android:layout_width="311dp"
+        android:layout_height="137dp"
+        android:text="@string/Q_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.208" />
+
+    <Button
+        android:id="@+id/Qbut1"
+        android:layout_width="138dp"
+        android:layout_height="115dp"
+        android:layout_marginBottom="212dp"
+        android:text="@string/buttopt1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.157"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
