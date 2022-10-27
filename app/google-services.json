@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "715250530095",
+    "project_id": "brigham-s-bears-flashcards",
+    "storage_bucket": "brigham-s-bears-flashcards.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:715250530095:android:cb86f05fdee98bada113da",
+        "android_client_info": {
+          "package_name": "com.example.brighams_bears_flashcards"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "715250530095-1j8d6ln54sdc1dtimkfiftrv0ghc96rj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAr1tWY0p5sJUmPlLN6aVR_mCvjrepXyAo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "715250530095-1j8d6ln54sdc1dtimkfiftrv0ghc96rj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
