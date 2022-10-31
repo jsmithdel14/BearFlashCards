@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
 
         buttonNextHome.setOnClickListener{setContentView(R.layout.main_menu)}
 
-        val test = 0;
+        val test = 2;
 
     }
 }
