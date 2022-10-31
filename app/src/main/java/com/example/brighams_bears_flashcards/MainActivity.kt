@@ -12,8 +12,5 @@ class MainActivity : AppCompatActivity() {
         val buttonNextHome = findViewById<Button>(R.id.nextbuttonhome)
 
         buttonNextHome.setOnClickListener{setContentView(R.layout.main_menu)}
-
-        val test = 2;
-
     }
 }
