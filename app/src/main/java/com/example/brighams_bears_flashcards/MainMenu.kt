@@ -12,8 +12,7 @@ class MainMenu  : AppCompatActivity() {
 
         val backButton = findViewById<Button>(R.id.backbutton)
         backButton.setOnClickListener{
-            val int = Intent(this, MainActivity::class.java)
-            startActivity(int)
+            finish()
         }
     }
 }
