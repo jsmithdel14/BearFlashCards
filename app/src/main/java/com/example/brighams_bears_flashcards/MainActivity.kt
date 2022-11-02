@@ -1,5 +1,6 @@
 package com.example.brighams_bears_flashcards
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -15,7 +16,14 @@ class MainActivity : AppCompatActivity() {
             val i = Intent(this, MainMenu::class.java)
             startActivity(i)
         }
-//        buttonNextHome.setOnClickListener{
+
+        //for try again
+        //val tryaB = findViewById<Button>(R.id.try_aga)
+        //tryaB.setOnClickListener{setContentView(R.layout.flachcard_wbutt_scn)}
+        //val homeB = findViewById<Button>(R.id.back_home_trya)
+        //homeB.setOnClickListener{setContentView(R.layout.main_menu)}
+
+        //        buttonNextHome.setOnClickListener{
 //            setContentView(R.layout.main_menu)
 //
 //            val hiB = findViewById<Button>(R.id.historybutton)
@@ -28,8 +36,10 @@ class MainActivity : AppCompatActivity() {
 //            sciB.setOnClickListener{setContentView(R.layout.level_menu)}
 //            swB.setOnClickListener{setContentView(R.layout.level_menu)}
 //
-//            val backB = findViewById<Button>(R.id.backbutton)
-//            backB.setOnClickListener{finish()}
+////            val backB = findViewById<Button>(R.id.backbutton)
+////            backB.setOnClickListener{setContentView(R.layout.activity_main)}
 //        }
+
+//        val buttonNextHome = findViewById<Button>(R.id.nextbuttonhome)
      }
 }
