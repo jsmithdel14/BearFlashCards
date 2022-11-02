@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() {
             mathB.setOnClickListener{setContentView(R.layout.level_menu)}
             sciB.setOnClickListener{setContentView(R.layout.level_menu)}
             swB.setOnClickListener{setContentView(R.layout.level_menu)}
+
 //            val backB = findViewById<Button>(R.id.backbutton)
 //            backB.setOnClickListener{setContentView(R.layout.activity_main)}
         }
