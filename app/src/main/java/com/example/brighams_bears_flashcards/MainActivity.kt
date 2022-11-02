@@ -19,6 +19,8 @@ class MainActivity : AppCompatActivity() {
             val sciB = findViewById<Button>(R.id.sciencebutton)
             val swB = findViewById<Button>(R.id.sightwordbutton)
 
+
+
             hiB.setOnClickListener{setContentView(R.layout.level_menu)}
             mathB.setOnClickListener{setContentView(R.layout.level_menu)}
             sciB.setOnClickListener{setContentView(R.layout.level_menu)}
@@ -26,6 +28,15 @@ class MainActivity : AppCompatActivity() {
 
 //            val backB = findViewById<Button>(R.id.backbutton)
 //            backB.setOnClickListener{setContentView(R.layout.activity_main)}
+
+
+            //for try again
+            //val tryaB = findViewById<Button>(R.id.try_aga)
+            //tryaB.setOnClickListener{setContentView(R.layout.flachcard_wbutt_scn)}
+            //val homeB = findViewById<Button>(R.id.back_home_trya)
+            //homeB.setOnClickListener{setContentView(R.layout.main_menu)}
+
+
         }
 
         val test = 2;
