@@ -30,6 +30,22 @@
             android:name=".MainMenu"
             android:exported="true">
         </activity>
+        <activity
+            android:name=".LevelMenu"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".FlashcardScreen"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".CongratsScreen"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".TryAgainScreen"
+            android:exported="true">
+        </activity>
     </application>
 
 </manifest>
