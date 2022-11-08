@@ -6,6 +6,20 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="139dp"
+        android:layout_height="133dp"
+        android:layout_marginTop="48dp"
+        android:contentDescription="@string/back_home"
+        app:layout_constraintBottom_toTopOf="@+id/Q_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.886"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.533"
+        app:srcCompat="@drawable/rsz_1brigham_s_bears" />
+
     <TextView
         android:id="@+id/congrats_tx"
         android:layout_width="263dp"
