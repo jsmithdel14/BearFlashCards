@@ -17,7 +17,7 @@ class FirebaseUtils {
                 }
                 .addOnFailureListener { exception ->
                     Log.w(TAG, "Error getting documents $exception")
-
+val testpush = 0
                 }
         }
 }
