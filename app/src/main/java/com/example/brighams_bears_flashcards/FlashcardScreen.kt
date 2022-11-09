@@ -7,35 +7,33 @@ import android.util.Log
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import com.google.firebase.database.DatabaseReference;
+//import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.FirebaseApp
 import com.google.firebase.firestore.FirebaseFirestore
+import com.google.firebase.firestore.ktx.firestore
+import com.google.firebase.firestore.ktx.toObject
+import com.google.firebase.ktx.Firebase
 
 
 class FlashcardScreen : AppCompatActivity() {
+    private lateinit var db : FirebaseFirestore
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.flachcard_wbutt_scn)
 
-        val database = FirebaseFirestore.getInstance()
-        val ref = database.collection("History").document("Easy")
-
         val qText = findViewById<TextView>(R.id.Q_text)
-        ref.get()
-            .addOnSuccessListener { document ->
-                if (document != null) {
-                    Log.d(TAG, "DocumentSnapshot data: ${document.data}")
-                    val pres = document.data!!["First United States President"].toString()
+
+        FirebaseApp.initializeApp(this)
+        db = Firebase.firestore
+
+        db.collection("History").document("Easy").get()
+            .addOnSuccessListener{ result ->
+                    val pres = result.data.toString()
                     qText.text = pres
-                } else {
-                    Log.d(TAG, "No such document")
-                }
             }
             .addOnFailureListener { exception ->
-                Log.d(TAG, "get failed with ", exception)
+                Log.d(TAG, "Error getting documents: ", exception)
             }
-
-
-
 
 
         val qButtonOne = findViewById<Button>(R.id.Qbut1)
