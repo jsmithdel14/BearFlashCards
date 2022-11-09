@@ -35,6 +35,7 @@ class FlashcardScreen : AppCompatActivity() {
                 Log.d(TAG, "Error getting documents: ", exception)
             }
 
+
         val qButtonOne = findViewById<Button>(R.id.Qbut1)
         qButtonOne.setOnClickListener{
             // Change this for whatever it may be depending on the question
