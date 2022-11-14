@@ -21,20 +21,8 @@ class FlashcardScreen : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.flachcard_wbutt_scn)
 
-        val qText = findViewById<TextView>(R.id.Q_text)
-
         FirebaseApp.initializeApp(this)
         db = Firebase.firestore
-
-        db.collection("History").document("Easy").get()
-            .addOnSuccessListener{ result ->
-                    val pres = result.data.toString()
-                    qText.text = pres
-            }
-            .addOnFailureListener { exception ->
-                Log.d(TAG, "Error getting documents: ", exception)
-            }
-
 
         val qButtonOne = findViewById<Button>(R.id.Qbut1)
         qButtonOne.setOnClickListener{
@@ -60,6 +48,33 @@ class FlashcardScreen : AppCompatActivity() {
             val i = Intent(this, TryAgainScreen::class.java)
             startActivity(i)
         }
+
+        val qText = findViewById<TextView>(R.id.Q_text)
+
+
+
+        db.collection("History").document("Easy").get()
+            .addOnSuccessListener{ result ->
+                    val questionAnswer = result.data.toString()
+                /* {First United States President = {1 = George Washington,
+                2= Abraham Lincoln, 3= Donald Trump, 4=Thomas Jefferson}, How many stars
+                are on the united states flag? ={1=50, 2=13, 3=25, 4=48}} */
+                    val questionAnswerDic = questionAnswer.map {}
+
+//                    for (item in questionAnswerDic){
+//                        if (){
+//
+//                        }
+//                    }
+
+                    qText.text = questionAnswer
+            }
+            .addOnFailureListener { exception ->
+                Log.d(TAG, "Error getting documents: ", exception)
+            }
+
+
+
 
 
     }
