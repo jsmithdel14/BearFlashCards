@@ -59,15 +59,30 @@ class FlashcardScreen : AppCompatActivity() {
                 /* {First United States President = {1 = George Washington,
                 2= Abraham Lincoln, 3= Donald Trump, 4=Thomas Jefferson}, How many stars
                 are on the united states flag? ={1=50, 2=13, 3=25, 4=48}} */
-                    val questionAnswerDic = questionAnswer.map {}
 
-//                    for (item in questionAnswerDic){
-//                        if (){
-//
-//                        }
-//                    }
+                    for (item in questionAnswer){
+                        if (item.equals("1")){
+                            qButtonOne.text = item.toString()
+                        }
+                        else if (item.equals("2")){
+                            qButtonTwo.text = item.toString()
+                        }
 
-                    qText.text = questionAnswer
+                        else if (item.equals("3")){
+                            qButtonThree.text = item.toString()
+                        }
+
+                        else if (item.equals("4")){
+                            qButtonFour.text = item.toString()
+                        }
+
+                        else{
+                            qText.text = item.toString()
+                        }
+
+                    }
+
+
             }
             .addOnFailureListener { exception ->
                 Log.d(TAG, "Error getting documents: ", exception)
