@@ -11,7 +11,6 @@ import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.FirebaseApp
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.ktx.firestore
-import com.google.firebase.firestore.ktx.toObject
 import com.google.firebase.ktx.Firebase
 
 
@@ -54,33 +53,53 @@ class FlashcardScreen : AppCompatActivity() {
 
 
         db.collection("History").document("Easy").get()
-            .addOnSuccessListener{ result ->
-                    val questionAnswer = result.data.toString()
+            .addOnSuccessListener { result ->
+                val questionAnswer = result.data.toString()
                 /* {First United States President = {1 = George Washington,
                 2= Abraham Lincoln, 3= Donald Trump, 4=Thomas Jefferson}, How many stars
                 are on the united states flag? ={1=50, 2=13, 3=25, 4=48}} */
-
-                    for (item in questionAnswer){
-                        if (item.equals("1")){
-                            qButtonOne.text = item.toString()
-                        }
-                        else if (item.equals("2")){
-                            qButtonTwo.text = item.toString()
+                result.data?.forEach { (key, value) ->
+                    if (key.equals("First United States President")){
+                        if (value.equals("1")){
+                            qButtonOne.text = value.toString()
                         }
 
-                        else if (item.equals("3")){
-                            qButtonThree.text = item.toString()
+                        else if (value.equals("2")){
+                            qButtonTwo.text = value.toString()
                         }
 
-                        else if (item.equals("4")){
-                            qButtonFour.text = item.toString()
+                        else if (value.equals("3")){
+                            qButtonThree.text = value.toString()
                         }
 
-                        else{
-                            qText.text = item.toString()
+                        else if (value.equals("4")){
+                            qButtonFour.text = value.toString()
                         }
-
                     }
+
+                }
+
+
+
+
+//                for (item in questionAnswer) {
+//                    if (item.equals("1")) {
+//                        qButtonOne.text = "1"
+//                    }
+//                    if (item.equals("2")) {
+//                        qButtonTwo.text = "2"
+//                    }
+//
+//                    if (item.equals("3")) {
+//                        qButtonThree.text = "3"
+//                    }
+//
+//                    if (item.equals("4")) {
+//                        qButtonFour.text = "4"
+//                    }
+                //}
+
+                    qText.text = questionAnswer
 
 
             }
