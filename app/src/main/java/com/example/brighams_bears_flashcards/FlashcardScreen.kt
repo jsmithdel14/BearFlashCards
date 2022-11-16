@@ -60,21 +60,28 @@ class FlashcardScreen : AppCompatActivity() {
                 are on the united states flag? ={1=50, 2=13, 3=25, 4=48}} */
                 result.data?.forEach { (key, value) ->
                     if (key.equals("First United States President")){
-                        if (value.equals("1")){
-                            qButtonOne.text = value.toString()
-                        }
+                        /* So, value in this scenario is a hashmap, so we just need to get the value
+                        * from the hashmap for one two three and four*/
+                        qButtonOne.text = value.get("1")
+                        qButtonTwo.text = value["2"]
+                        qButtonThree.text = value["3"]
+                        qButtonFour.text = value["4"]
 
-                        else if (value.equals("2")){
-                            qButtonTwo.text = value.toString()
-                        }
-
-                        else if (value.equals("3")){
-                            qButtonThree.text = value.toString()
-                        }
-
-                        else if (value.equals("4")){
-                            qButtonFour.text = value.toString()
-                        }
+//                        if (value.equals("1")){
+//                            qButtonOne.text = value.toString()
+//                        }
+//
+//                        else if (value.equals("2")){
+//                            qButtonTwo.text = value.toString()
+//                        }
+//
+//                        else if (value.equals("3")){
+//                            qButtonThree.text = value.toString()
+//                        }
+//
+//                        else if (value.equals("4")){
+//                            qButtonFour.text = value.toString()
+//                        }
                     }
 
                 }
