@@ -62,10 +62,26 @@ class FlashcardScreen : AppCompatActivity() {
                     if (key.equals("First United States President")){
                         /* So, value in this scenario is a hashmap, so we just need to get the value
                         * from the hashmap for one two three and four*/
-                        qButtonOne.text = value.get("1")
-                        qButtonTwo.text = value["2"]
-                        qButtonThree.text = value["3"]
-                        qButtonFour.text = value["4"]
+//                        qButtonOne.text = value
+//                        qButtonTwo.text = value["2"]
+//                        qButtonThree.text = value["3"]
+//                        qButtonFour.text = value["4"]
+                        qText.text = key
+                        //qButtonOne.text = value["1"]
+//                        for ((k,v) in value) {
+//                            if (k == "1"){
+//                                qButtonOne.text = v
+//                            }
+//                            else if (k == "2"){
+//                                qButtonTwo.text = v
+//                            }
+//                            else if (k == "3"){
+//                                qButtonThree.text = v
+//                            }
+//                            else if (k == "4"){
+//                                qButtonFour.text = v
+//                            }
+//                        }
 
 //                        if (value.equals("1")){
 //                            qButtonOne.text = value.toString()
@@ -106,7 +122,7 @@ class FlashcardScreen : AppCompatActivity() {
 //                    }
                 //}
 
-                    qText.text = questionAnswer
+
 
 
             }
