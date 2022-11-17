@@ -1,5 +1,6 @@
 package com.example.brighams_bears_flashcards
 
+//import com.google.firebase.database.DatabaseReference;
 import android.content.ContentValues.TAG
 import android.content.Intent
 import android.os.Bundle
@@ -7,8 +8,8 @@ import android.util.Log
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-//import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.FirebaseApp
+import com.google.firebase.database.GenericTypeIndicator
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
@@ -16,6 +17,7 @@ import com.google.firebase.ktx.Firebase
 
 class FlashcardScreen : AppCompatActivity() {
     private lateinit var db : FirebaseFirestore
+    val ti = object : GenericTypeIndicator<HashMap<String?, String?>?>() {}
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.flachcard_wbutt_scn)
@@ -67,21 +69,22 @@ class FlashcardScreen : AppCompatActivity() {
 //                        qButtonThree.text = value["3"]
 //                        qButtonFour.text = value["4"]
                         qText.text = key
+                        val questions: HashMap<String?, String?>? = value as HashMap<String?, String?>?
+
                         //qButtonOne.text = value["1"]
-//                        for ((k,v) in value) {
-//                            if (k == "1"){
-//                                qButtonOne.text = v
-//                            }
-//                            else if (k == "2"){
-//                                qButtonTwo.text = v
-//                            }
-//                            else if (k == "3"){
-//                                qButtonThree.text = v
-//                            }
-//                            else if (k == "4"){
-//                                qButtonFour.text = v
-//                            }
-//                        }
+                        if (questions != null) {
+                            for ((k,v) in questions) {
+                                if (k == "1"){
+                                    qButtonOne.text = v
+                                } else if (k == "2"){
+                                    qButtonTwo.text = v
+                                } else if (k == "3"){
+                                    qButtonThree.text = v
+                                } else if (k == "4"){
+                                    qButtonFour.text = v
+                                }
+                            }
+                        }
 
 //                        if (value.equals("1")){
 //                            qButtonOne.text = value.toString()
