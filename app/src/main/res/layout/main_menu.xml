@@ -31,6 +31,18 @@
         app:layout_constraintVertical_bias="0.025"
         tools:srcCompat="@drawable/rsz_1brigham_s_bears" />
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="119dp"
+        android:layout_height="149dp"
+        app:layout_constraintBottom_toTopOf="@+id/optionmessage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.962"
+        app:layout_constraintStart_toEndOf="@+id/backbutton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/brigham_s_bears" />
+
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
         android:layout_width="0dp"
