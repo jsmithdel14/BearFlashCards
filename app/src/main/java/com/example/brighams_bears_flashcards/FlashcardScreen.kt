@@ -20,6 +20,10 @@ class FlashcardScreen : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.flachcard_wbutt_scn)
 
+        val intent = getIntent()
+        val subject = intent.getStringExtra("subject")
+        val diff = intent.getStringExtra("diff")
+
         FirebaseApp.initializeApp(this)
         db = Firebase.firestore
 
@@ -52,10 +56,10 @@ class FlashcardScreen : AppCompatActivity() {
 
 
 
-        db.collection("History").document("Easy").get()
+        db.collection(subject.toString()).document(diff.toString()).get()
             .addOnSuccessListener { result ->
                 result.data?.forEach { (key, value) ->
-                    if (key.equals("First United States President")){
+                    //if (key.equals("First United States President")){
                         qText.text = key
                         val questions: HashMap<String?, String?>? = value as HashMap<String?, String?>?
                         if (questions != null) {
@@ -71,7 +75,7 @@ class FlashcardScreen : AppCompatActivity() {
                                 }
                             }
                         }
-                    }
+                    //}
 
                 }
             }
