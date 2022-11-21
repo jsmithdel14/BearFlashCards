@@ -16,13 +16,20 @@ import com.google.firebase.ktx.Firebase
 
 class FlashcardScreen : AppCompatActivity() {
     private lateinit var db : FirebaseFirestore
+    var count = "0"
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.flachcard_wbutt_scn)
-
-        val intent = getIntent()
+        val intent = intent
         val subject = intent.getStringExtra("subject")
         val diff = intent.getStringExtra("diff")
+        if (count != "0") {
+            count = intent.getStringExtra("count").toString()
+        }
+
+        if (count != null) {
+            count = (count.toInt() + 1).toString()
+        }
 
         FirebaseApp.initializeApp(this)
         db = Firebase.firestore
@@ -31,6 +38,9 @@ class FlashcardScreen : AppCompatActivity() {
         qButtonOne.setOnClickListener{
             // Change this for whatever it may be depending on the question
             val i = Intent(this, CongratsScreen::class.java)
+            i.putExtra("diff", diff)
+            i.putExtra("subject", subject)
+            i.putExtra("count", count)
             startActivity(i)
         }
         val qButtonTwo = findViewById<Button>(R.id.Qbut2)
@@ -59,7 +69,7 @@ class FlashcardScreen : AppCompatActivity() {
         db.collection(subject.toString()).document(diff.toString()).get()
             .addOnSuccessListener { result ->
                 result.data?.forEach { (key, value) ->
-                    //if (key.equals("First United States President")){
+                    if (key.startsWith("$count:")){
                         qText.text = key
                         val questions: HashMap<String?, String?>? = value as HashMap<String?, String?>?
                         if (questions != null) {
@@ -75,7 +85,7 @@ class FlashcardScreen : AppCompatActivity() {
                                 }
                             }
                         }
-                    //}
+                    }
 
                 }
             }
