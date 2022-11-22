@@ -16,20 +16,13 @@ import com.google.firebase.ktx.Firebase
 
 class FlashcardScreen : AppCompatActivity() {
     private lateinit var db : FirebaseFirestore
-    var count = "0"
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.flachcard_wbutt_scn)
         val intent = intent
         val subject = intent.getStringExtra("subject")
         val diff = intent.getStringExtra("diff")
-        if (count != "0") {
-            count = intent.getStringExtra("count").toString()
-        }
-
-        if (count != null) {
-            count = (count.toInt() + 1).toString()
-        }
+        val count = intent.getStringExtra("count")
 
         FirebaseApp.initializeApp(this)
         db = Firebase.firestore
@@ -86,7 +79,6 @@ class FlashcardScreen : AppCompatActivity() {
                             }
                         }
                     }
-
                 }
             }
             .addOnFailureListener { exception ->
