@@ -18,12 +18,14 @@ class LevelMenu : AppCompatActivity() {
             finish()
         }
 
+        val count = "1"
         val easyButon = findViewById<Button>(R.id.easybutton)
         easyButon.setOnClickListener{
             val diff = "Easy"
             val i = Intent(this, FlashcardScreen::class.java)
             i.putExtra("diff", diff)
             i.putExtra("subject", subject)
+            i.putExtra("count", count)
             startActivity(i)
         }
         val medButton = findViewById<Button>(R.id.mediumbutton)
@@ -32,6 +34,7 @@ class LevelMenu : AppCompatActivity() {
             val i = Intent(this, FlashcardScreen::class.java)
             i.putExtra("diff", diff)
             i.putExtra("subject", subject)
+            i.putExtra("count", count)
             startActivity(i)
         }
         val harButton = findViewById<Button>(R.id.hardbutton)
@@ -40,6 +43,7 @@ class LevelMenu : AppCompatActivity() {
             val i = Intent(this, FlashcardScreen::class.java)
             i.putExtra("diff", diff)
             i.putExtra("subject", subject)
+            i.putExtra("count", count)
             startActivity(i)
         }
     }
