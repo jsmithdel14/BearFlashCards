@@ -37,12 +37,5 @@ class MainMenu  : AppCompatActivity() {
             i.putExtra("subject", subject)
             startActivity(i)
         }
-        val sightButton = findViewById<Button>(R.id.sightwordbutton)
-        sightButton.setOnClickListener{
-            val i = Intent(this, LevelMenu::class.java)
-            val subject = "Sight Words"
-            i.putExtra("subject", subject)
-            startActivity(i)
-        }
     }
 }
