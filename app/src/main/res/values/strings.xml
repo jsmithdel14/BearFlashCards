@@ -11,4 +11,7 @@
     <string name="buttopt2">This is Option 2</string>
     <string name="buttopt3">This is Option 3</string>
     <string name="buttopt4">This is Option 4</string>
+    <string name="epoints">null</string>
+    <string name="points_earned">Points So Far:</string>
+
 </resources>

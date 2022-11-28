@@ -21,7 +21,7 @@ class TryAgainScreen : AppCompatActivity() {
             startActivity(i)
         }
 
-
+        //val pointCount =
 
     }
 }
