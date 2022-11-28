@@ -79,12 +79,26 @@ class FlashcardScreen : AppCompatActivity() {
                             }
                         }
                     }
+                    else if (count != null) {
+                        if (count.equals("3")) {
+                            setContentView(R.layout.finish_set)
+                            val subSel = findViewById<Button>(R.id.subjectSelectBut)
+                            subSel.setOnClickListener{
+                                val i = Intent(this, MainMenu::class.java)
+                                startActivity(i)
+                            }
+                            val mainMenu = findViewById<Button>(R.id.mainMenuButton)
+                            mainMenu.setOnClickListener {
+                                val i = Intent(this, MainActivity::class.java)
+                                startActivity(i)
+                            }
+                        }
+                    }
                 }
             }
             .addOnFailureListener { exception ->
                 Log.d(TAG, "Error getting documents: ", exception)
             }
-
 
 
 

@@ -2,7 +2,9 @@ package com.example.brighams_bears_flashcards
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
 class CongratsScreen : AppCompatActivity() {
@@ -32,5 +34,9 @@ class CongratsScreen : AppCompatActivity() {
             val i = Intent(this, MainMenu::class.java)
             startActivity(i)
         }
+        val points = "0"
+        val pointadder = findViewById<TextView>(R.id.epoints2)
+
+
     }
 }
