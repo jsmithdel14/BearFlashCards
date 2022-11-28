@@ -18,8 +18,6 @@ class CongratsScreen : AppCompatActivity() {
         if (count != null) {
             count = (count.toInt() + 1).toString()
         }
-
-
         val nextQuestion = findViewById<Button>(R.id.next_area)
         nextQuestion.setOnClickListener{
             val i = Intent(this, FlashcardScreen::class.java)
