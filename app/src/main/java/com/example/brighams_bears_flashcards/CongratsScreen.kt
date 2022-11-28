@@ -10,9 +10,22 @@ class CongratsScreen : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.congrats_scn)
 
+        val intent = getIntent()
+        val subject = intent.getStringExtra("subject")
+        val diff = intent.getStringExtra("diff")
+        var count = intent.getStringExtra("count")
+
+        if (count != null) {
+            count = (count.toInt() + 1).toString()
+        }
+
+
         val nextQuestion = findViewById<Button>(R.id.next_area)
         nextQuestion.setOnClickListener{
             val i = Intent(this, FlashcardScreen::class.java)
+            i.putExtra("diff", diff)
+            i.putExtra("subject", subject)
+            i.putExtra("count", count)
             startActivity(i)
         }
 
