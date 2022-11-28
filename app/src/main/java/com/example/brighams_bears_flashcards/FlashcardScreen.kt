@@ -79,8 +79,9 @@ class FlashcardScreen : AppCompatActivity() {
                             }
                         }
                     }
+
                     else if (count != null) {
-                        if (count.equals("3")) {
+                        if (count.equals((result.data!!.size + 1).toString())) {
                             setContentView(R.layout.finish_set)
                             val subSel = findViewById<Button>(R.id.subjectSelectBut)
                             subSel.setOnClickListener{
