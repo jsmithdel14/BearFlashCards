@@ -23,6 +23,7 @@ class FlashcardScreen : AppCompatActivity() {
         val subject = intent.getStringExtra("subject")
         val diff = intent.getStringExtra("diff")
         val count = intent.getStringExtra("count")
+        val points =intent.getStringExtra("points")
 
         FirebaseApp.initializeApp(this)
         db = Firebase.firestore
@@ -34,6 +35,7 @@ class FlashcardScreen : AppCompatActivity() {
             i.putExtra("diff", diff)
             i.putExtra("subject", subject)
             i.putExtra("count", count)
+            i.putExtra("points",points)
             startActivity(i)
         }
         val qButtonTwo = findViewById<Button>(R.id.Qbut2)

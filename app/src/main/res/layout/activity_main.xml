@@ -5,6 +5,7 @@
     android:id="@+id/welcomemenu"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#b0bcab"
     tools:context=".MainActivity">
 
     <ImageButton
@@ -30,6 +31,7 @@
         android:textAlignment="center"
         android:textSize="48sp"
         android:textStyle="bold"
+        android:textColor="#5a4947"
         app:layout_constraintBottom_toTopOf="@+id/nextbuttonhome"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -42,6 +44,8 @@
         android:layout_marginTop="43dp"
         android:layout_marginBottom="162dp"
         android:text="Next"
+        android:textColor="#5a4947"
+        android:backgroundTint="#ffffff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

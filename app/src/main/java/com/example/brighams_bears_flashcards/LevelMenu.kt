@@ -19,6 +19,7 @@ class LevelMenu : AppCompatActivity() {
         }
 
         val count = "1"
+        val points ="0"
         val easyButon = findViewById<Button>(R.id.easybutton)
         easyButon.setOnClickListener{
             val diff = "Easy"
@@ -26,6 +27,7 @@ class LevelMenu : AppCompatActivity() {
             i.putExtra("diff", diff)
             i.putExtra("subject", subject)
             i.putExtra("count", count)
+            i.putExtra("points",points)
             startActivity(i)
         }
         val medButton = findViewById<Button>(R.id.mediumbutton)
@@ -35,6 +37,7 @@ class LevelMenu : AppCompatActivity() {
             i.putExtra("diff", diff)
             i.putExtra("subject", subject)
             i.putExtra("count", count)
+            i.putExtra("points",points)
             startActivity(i)
         }
         val harButton = findViewById<Button>(R.id.hardbutton)
@@ -44,7 +47,9 @@ class LevelMenu : AppCompatActivity() {
             i.putExtra("diff", diff)
             i.putExtra("subject", subject)
             i.putExtra("count", count)
+            i.putExtra("points",points)
             startActivity(i)
         }
+
     }
 }
