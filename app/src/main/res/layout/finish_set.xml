@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#B0BCAB">
 
     <EditText
         android:id="@+id/epointstxt5"
@@ -16,6 +17,7 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:text="@string/points_earned"
+        android:textColor="#5A4947"
         app:layout_constraintBottom_toTopOf="@+id/Oh_no"
         app:layout_constraintEnd_toStartOf="@+id/imageButton5"
         app:layout_constraintHorizontal_bias="0.0"
@@ -32,6 +34,7 @@
         android:ems="10"
         android:hint="@string/epoints"
         android:inputType="number"
+        android:textColor="#5A4947"
         app:layout_constraintBottom_toTopOf="@+id/finishSetTxt"
         app:layout_constraintEnd_toStartOf="@+id/imageButton5"
         app:layout_constraintHorizontal_bias="0.522"
@@ -43,11 +46,14 @@
         android:id="@+id/finishSetTxt"
         android:layout_width="311dp"
         android:layout_height="137dp"
+
         android:layout_marginStart="59dp"
         android:layout_marginTop="56dp"
         android:layout_marginEnd="41dp"
         android:layout_marginBottom="75dp"
+
         android:text="Congrats! You have finished the set"
+        android:textColor="#5A4947"
         android:textSize="34sp"
         app:layout_constraintBottom_toTopOf="@+id/subjectSelectBut"
         app:layout_constraintEnd_toEndOf="parent"
