@@ -65,10 +65,10 @@ class FlashcardScreen : AppCompatActivity() {
 
 
 
-        db.collection("History").document("Easy").get()
+        db.collection(subject.toString()).document(diff.toString()).get()
             .addOnSuccessListener { result ->
                 result.data?.forEach { (key, value) ->
-                    if (key.equals("First United States President")){
+                    if (key.startsWith("$count:")){
                         qText.text = key
                         val questions: HashMap<String?, String?>? = value as HashMap<String?, String?>?
                         if (questions != null) {
