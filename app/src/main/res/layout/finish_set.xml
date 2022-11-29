@@ -51,8 +51,10 @@
         android:textSize="34sp"
         app:layout_constraintBottom_toTopOf="@+id/subjectSelectBut"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton5" />
+        app:layout_constraintTop_toBottomOf="@+id/imageButton5"
+        app:layout_constraintVertical_bias="0.5" />
 
     <ImageButton
         android:id="@+id/imageButton5"
@@ -65,8 +67,10 @@
         android:contentDescription="@string/back_home"
         app:layout_constraintBottom_toTopOf="@+id/finishSetTxt"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/epointstxt5"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
         app:srcCompat="@drawable/rsz_1brigham_s_bears" />
 
     <Button
@@ -80,8 +84,10 @@
         android:text="Subject Selection"
         app:layout_constraintBottom_toTopOf="@+id/mainMenuButton"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/finishSetTxt" />
+        app:layout_constraintTop_toBottomOf="@+id/finishSetTxt"
+        app:layout_constraintVertical_bias="0.5" />
 
     <Button
         android:id="@+id/mainMenuButton"
@@ -94,7 +100,9 @@
         android:text="Main Menu"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/subjectSelectBut" />
+        app:layout_constraintTop_toBottomOf="@+id/subjectSelectBut"
+        app:layout_constraintVertical_bias="0.5" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
