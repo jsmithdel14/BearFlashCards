@@ -34,9 +34,10 @@ class CongratsScreen : AppCompatActivity() {
             val i = Intent(this, MainMenu::class.java)
             startActivity(i)
         }
-        val points = "0"
+        /*val points = "0"
         val pointadder = findViewById<TextView>(R.id.epoints2)
-
-
+        if (points != null) {
+            points = (points.toInt() + 1)
+            }*/
     }
 }

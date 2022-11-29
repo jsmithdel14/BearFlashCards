@@ -20,6 +20,13 @@ class FlashcardScreen : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.flachcard_wbutt_scn)
 
+        val intent = intent
+        val subject = intent.getStringExtra("subject")
+        val diff = intent.getStringExtra("diff")
+        val count = intent.getStringExtra("count")
+        val points =intent.getStringExtra("points")
+
+
         FirebaseApp.initializeApp(this)
         db = Firebase.firestore
 
@@ -27,6 +34,12 @@ class FlashcardScreen : AppCompatActivity() {
         qButtonOne.setOnClickListener{
             // Change this for whatever it may be depending on the question
             val i = Intent(this, CongratsScreen::class.java)
+
+            i.putExtra("diff", diff)
+            i.putExtra("subject", subject)
+            i.putExtra("count", count)
+            i.putExtra("points",points)
+
             startActivity(i)
         }
         val qButtonTwo = findViewById<Button>(R.id.Qbut2)
@@ -72,8 +85,9 @@ class FlashcardScreen : AppCompatActivity() {
                             }
                         }
                     }
+
                     else if (count != null) {
-                        if (count.equals("3")) {
+                        if (count.equals((result.data!!.size + 1).toString())) {
                             setContentView(R.layout.finish_set)
                             val subSel = findViewById<Button>(R.id.subjectSelectBut)
                             subSel.setOnClickListener{
