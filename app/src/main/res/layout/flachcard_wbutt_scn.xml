@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#B0BCAB">
 
     <Button
         android:id="@+id/Qbut4"
@@ -11,7 +12,9 @@
         android:layout_height="115dp"
         android:layout_marginStart="208dp"
         android:layout_marginTop="36dp"
+        android:backgroundTint="#ffffff"
         android:text="@string/buttopt4"
+        android:textColor="#5A4947"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Qbut2" />
 
@@ -22,7 +25,9 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="37dp"
         android:layout_marginBottom="68dp"
+        android:backgroundTint="#ffffff"
         android:text="@string/buttopt3"
+        android:textColor="#5A4947"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/Qbut4"
         app:layout_constraintStart_toStartOf="parent"
@@ -34,7 +39,9 @@
         android:layout_height="115dp"
         android:layout_marginStart="40dp"
         android:layout_marginBottom="212dp"
+        android:backgroundTint="#ffffff"
         android:text="@string/buttopt2"
+        android:textColor="#5A4947"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/Qbut1" />
 
@@ -43,6 +50,7 @@
         android:layout_width="311dp"
         android:layout_height="137dp"
         android:text="@string/Q_text"
+        android:textColor="#5A4947"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -52,10 +60,13 @@
 
     <Button
         android:id="@+id/Qbut1"
+        style="Button.white"
         android:layout_width="138dp"
         android:layout_height="115dp"
         android:layout_marginBottom="212dp"
+        android:backgroundTint="#ffffff"
         android:text="@string/buttopt1"
+        android:textColor="#5A4947"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.157"
@@ -63,8 +74,8 @@
 
     <ImageButton
         android:id="@+id/imageButton3"
-        android:layout_width="139dp"
-        android:layout_height="133dp"
+        android:layout_width="128dp"
+        android:layout_height="127dp"
         android:contentDescription="@string/back_home"
         app:layout_constraintBottom_toTopOf="@+id/Q_text"
         app:layout_constraintEnd_toEndOf="parent"
