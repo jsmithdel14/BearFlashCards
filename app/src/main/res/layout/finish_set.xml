@@ -45,32 +45,48 @@
         android:layout_height="137dp"
         android:text="Congrats! You have finished the set"
         android:textSize="34sp"
-        tools:layout_editor_absoluteX="59dp"
-        tools:layout_editor_absoluteY="229dp" />
+        app:layout_constraintBottom_toTopOf="@+id/subjectSelectBut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton5"
+        app:layout_constraintVertical_bias="0.5" />
 
     <ImageButton
         android:id="@+id/imageButton5"
         android:layout_width="139dp"
         android:layout_height="133dp"
         android:contentDescription="@string/back_home"
-        app:srcCompat="@drawable/rsz_1brigham_s_bears"
-        tools:layout_editor_absoluteX="243dp"
-        tools:layout_editor_absoluteY="40dp" />
+        app:layout_constraintBottom_toTopOf="@+id/finishSetTxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/epointstxt5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        app:srcCompat="@drawable/rsz_1brigham_s_bears" />
 
     <Button
         android:id="@+id/subjectSelectBut"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Subject Selection"
-        tools:layout_editor_absoluteX="110dp"
-        tools:layout_editor_absoluteY="441dp" />
+        app:layout_constraintBottom_toTopOf="@+id/mainMenuButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/finishSetTxt"
+        app:layout_constraintVertical_bias="0.5" />
 
     <Button
         android:id="@+id/mainMenuButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Main Menu"
-        tools:layout_editor_absoluteX="144dp"
-        tools:layout_editor_absoluteY="522dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subjectSelectBut"
+        app:layout_constraintVertical_bias="0.5" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
