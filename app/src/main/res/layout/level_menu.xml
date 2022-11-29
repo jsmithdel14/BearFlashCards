@@ -86,7 +86,7 @@
             android:id="@+id/hardbutton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="#AA2D2D"
+            android:backgroundTint="#ffffff"
             android:minHeight="48dp"
             android:text="Hard"
             android:textColor="#5A4947"
