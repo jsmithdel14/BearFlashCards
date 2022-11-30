@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#B0BCAB"
     tools:context=".MainActivity">
 
     <EditText
@@ -57,6 +58,7 @@
         android:layout_width="263dp"
         android:layout_height="130dp"
         android:text="@string/congrats_txt"
+        android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
