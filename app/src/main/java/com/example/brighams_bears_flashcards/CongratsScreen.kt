@@ -16,16 +16,25 @@ class CongratsScreen : AppCompatActivity() {
         val subject = intent.getStringExtra("subject")
         val diff = intent.getStringExtra("diff")
         var count = intent.getStringExtra("count")
+        var points = intent.getStringExtra("points")
 
         if (count != null) {
             count = (count.toInt() + 1).toString()
         }
+
+        if (points != null){
+            points = (points.toInt() + 10).toString()
+        }
+
+        val conPoints = findViewById<TextView>(R.id.pointsCountCon)
+        conPoints.text = points
         val nextQuestion = findViewById<Button>(R.id.next_area)
         nextQuestion.setOnClickListener{
             val i = Intent(this, FlashcardScreen::class.java)
             i.putExtra("diff", diff)
             i.putExtra("subject", subject)
             i.putExtra("count", count)
+            i.putExtra("points", points)
             startActivity(i)
         }
 

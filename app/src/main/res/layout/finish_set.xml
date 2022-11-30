@@ -6,42 +6,6 @@
     android:layout_height="match_parent"
     android:background="#B0BCAB">
 
-    <EditText
-        android:id="@+id/epointstxt5"
-        android:layout_width="182dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="48dp"
-        android:layout_marginBottom="124dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/points_earned"
-        android:textColor="#5A4947"
-        app:layout_constraintBottom_toTopOf="@+id/Oh_no"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton5"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <EditText
-        android:id="@+id/epoints5"
-        android:layout_width="130dp"
-        android:layout_height="52dp"
-        android:layout_marginBottom="56dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:hint="@string/epoints"
-        android:inputType="number"
-        android:textColor="#5A4947"
-        app:layout_constraintBottom_toTopOf="@+id/finishSetTxt"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton5"
-        app:layout_constraintHorizontal_bias="0.522"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/epointstxt5"
-        app:layout_constraintVertical_bias="0.52" />
-
     <TextView
         android:id="@+id/finishSetTxt"
         android:layout_width="311dp"
@@ -66,15 +30,12 @@
         android:id="@+id/imageButton5"
         android:layout_width="128dp"
         android:layout_height="120dp"
-        android:layout_marginStart="17dp"
         android:layout_marginTop="120dp"
         android:layout_marginEnd="29dp"
         android:layout_marginBottom="40dp"
         android:contentDescription="@string/back_home"
         app:layout_constraintBottom_toTopOf="@+id/finishSetTxt"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/epointstxt5"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.5"
         app:srcCompat="@drawable/rsz_1brigham_s_bears" />
@@ -114,5 +75,35 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/subjectSelectBut"
         app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/pointsTextFinal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="58dp"
+        android:text="Final Points:"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/subjectSelectBut"
+        app:layout_constraintEnd_toStartOf="@+id/pointsCounterFinal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/finishSetTxt" />
+
+    <TextView
+        android:id="@+id/pointsCounterFinal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="145dp"
+        android:layout_marginBottom="58dp"
+        android:text="null"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/subjectSelectBut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/pointsTextFinal"
+        app:layout_constraintTop_toBottomOf="@+id/finishSetTxt" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

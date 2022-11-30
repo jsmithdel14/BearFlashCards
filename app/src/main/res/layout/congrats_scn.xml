@@ -7,42 +7,25 @@
     android:background="#B0BCAB"
     tools:context=".MainActivity">
 
-    <EditText
-        android:id="@+id/epoints2"
-        android:layout_width="181dp"
-        android:layout_height="49dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:hint="@string/epoints"
-        android:inputType="number"
-        app:layout_constraintBottom_toTopOf="@+id/congrats_tx"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton2"
-        app:layout_constraintHorizontal_bias="0.75"
+    <TextView
+        android:id="@+id/pointsTextCon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="49dp"
+        android:text="Points:"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/Q_text"
+        app:layout_constraintEnd_toStartOf="@+id/pointsCounter"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/epointstxt2"
-        app:layout_constraintVertical_bias="0.411" />
-
-    <EditText
-        android:id="@+id/epointstxt2"
-        android:layout_width="182dp"
-        android:layout_height="48dp"
-        android:layout_marginEnd="12dp"
-        android:layout_marginBottom="100dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/points_earned"
-        app:layout_constraintBottom_toTopOf="@+id/congrats_tx"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton2"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.666" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/imageButton2"
-        android:layout_width="139dp"
-        android:layout_height="133dp"
+        android:layout_width="127dp"
+        android:layout_height="120dp"
         android:layout_marginTop="48dp"
         android:contentDescription="@string/back_home"
         app:layout_constraintBottom_toTopOf="@+id/Q_text"
@@ -69,6 +52,8 @@
         android:id="@+id/next_area"
         android:layout_width="187dp"
         android:layout_height="83dp"
+        android:backgroundTint="#FFFFFFFF"
+        android:textColor="@android:color/black"
         android:text="@string/next_area"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -80,6 +65,8 @@
         android:id="@+id/back_home_con"
         android:layout_width="144dp"
         android:layout_height="67dp"
+        android:backgroundTint="#FFFFFFFF"
+        android:textColor="@android:color/black"
         android:text="@string/back_home"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -87,4 +74,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/next_area"
         app:layout_constraintVertical_bias="0.309" />
+
+    <TextView
+        android:id="@+id/pointsCountCon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="95dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="95dp"
+        android:text="null"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/congrats_tx"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton2"
+        app:layout_constraintStart_toEndOf="@+id/pointsTextCon"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
