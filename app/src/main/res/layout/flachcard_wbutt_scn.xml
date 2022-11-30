@@ -10,13 +10,19 @@
         android:id="@+id/Qbut4"
         android:layout_width="138dp"
         android:layout_height="115dp"
-        android:layout_marginStart="208dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="36dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="61dp"
         android:backgroundTint="#ffffff"
         android:text="@string/buttopt4"
         android:textColor="#5A4947"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.817"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Qbut2" />
+        app:layout_constraintTop_toBottomOf="@+id/Qbut2"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/Qbut3"
@@ -30,8 +36,10 @@
         android:textColor="#5A4947"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/Qbut4"
+        app:layout_constraintHorizontal_bias="0.402"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Qbut1" />
+        app:layout_constraintTop_toBottomOf="@+id/Qbut1"
+        app:layout_constraintVertical_bias="0.125" />
 
     <Button
         android:id="@+id/Qbut2"
@@ -51,7 +59,7 @@
         android:layout_height="137dp"
         android:text="@string/Q_text"
         android:textColor="#5A4947"
-        android:textSize="34sp"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -84,5 +92,35 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.533"
         app:srcCompat="@drawable/rsz_1brigham_s_bears" />
+
+    <TextView
+        android:id="@+id/pointsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="49dp"
+        android:text="Points:"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/Q_text"
+        app:layout_constraintEnd_toStartOf="@+id/pointsCounter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/pointsCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginBottom="49dp"
+        android:text="null"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/Q_text"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton3"
+        app:layout_constraintStart_toEndOf="@+id/pointsText"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

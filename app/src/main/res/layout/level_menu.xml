@@ -6,38 +6,6 @@
     android:layout_height="match_parent"
     android:background="#B0BCAB">
 
-    <EditText
-        android:id="@+id/epointstxt3"
-        android:layout_width="182dp"
-        android:layout_height="48dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/points_earned"
-        android:textColor="#5A4947"
-        app:layout_constraintBottom_toTopOf="@+id/epoints3"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton4"
-        app:layout_constraintHorizontal_bias="0.8"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <EditText
-        android:id="@+id/epoints3"
-        android:layout_width="130dp"
-        android:layout_height="49dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:hint="@string/epoints"
-        android:inputType="number"
-        android:textColor="#5A4947"
-        app:layout_constraintBottom_toBottomOf="@+id/cardView2"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton4"
-        app:layout_constraintHorizontal_bias="0.66"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
-
     <ImageButton
         android:id="@+id/imageButton4"
         android:layout_width="127dp"

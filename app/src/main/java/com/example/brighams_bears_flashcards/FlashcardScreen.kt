@@ -63,7 +63,8 @@ class FlashcardScreen : AppCompatActivity() {
 
         val qText = findViewById<TextView>(R.id.Q_text)
 
-
+        val pointCount = findViewById<TextView>(R.id.pointsCounter)
+        pointCount.text = points
 
         db.collection(subject.toString()).document(diff.toString()).get()
             .addOnSuccessListener { result ->
@@ -89,6 +90,9 @@ class FlashcardScreen : AppCompatActivity() {
                     else if (count != null) {
                         if (count.equals((result.data!!.size + 1).toString())) {
                             setContentView(R.layout.finish_set)
+
+                            val finalPoints = findViewById<TextView>(R.id.pointsCounterFinal)
+                            finalPoints.text = points
                             val subSel = findViewById<Button>(R.id.subjectSelectBut)
                             subSel.setOnClickListener{
                                 val i = Intent(this, MainMenu::class.java)
