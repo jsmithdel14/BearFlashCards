@@ -20,9 +20,9 @@ This is a flash card learning app for children. The target age range is from 4-1
 
 # Development Environment
 
-* IDE - Android Studio
-* Language - Kotlin and XML
-* Database - Google Firebase
+* IDE - [Android Studio](https://developer.android.com/studio)
+* Language - Kotlin and XML - [About Kotlin](https://kotlinlang.org/) - [About XML](https://developer.mozilla.org/en-US/docs/Web/XML/XML_introduction#:~:text=XML%20(Extensible%20Markup%20Language)%20is,stored%2C%20searched%2C%20and%20shared.)
+* Database - [Google Firebase](https://firebase.google.com/)
 
 # Collaborators
 
