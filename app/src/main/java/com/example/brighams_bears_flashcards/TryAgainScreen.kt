@@ -3,6 +3,7 @@ package com.example.brighams_bears_flashcards
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
 class TryAgainScreen : AppCompatActivity() {
@@ -19,6 +20,9 @@ class TryAgainScreen : AppCompatActivity() {
         if (points != null){
             points = (points.toInt() - 5).toString()
         }
+
+        val tryAgain2 = findViewById<TextView>(R.id.tryAgain)
+        tryAgain2.text = points
 
         val tryAgain = findViewById<Button>(R.id.try_aga)
         tryAgain.setOnClickListener{
