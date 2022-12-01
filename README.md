@@ -13,10 +13,15 @@ As a team we decided to make this app so each of us could learn and become more 
 # Collaborators
 
 Jared Ellis - Documentation Manager
+
 Darcy Merilan - Project Manager
+
 Josh Smith - Configuration Manager
+
 Mason Schenk - Team Lead
+
 Daniel Wilkes - Quality Assurance
+
 Emily Wayment - Graphic Design
 
 # Useful Websites
