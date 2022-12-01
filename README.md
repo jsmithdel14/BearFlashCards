@@ -19,7 +19,7 @@ Emily Wayment - Graphic Design
 
 # Useful Websites
 
-* [Google)](http://www.google.com)
+* [Google](http://www.google.com)
 * [Trello](https://trello.com/)
 * [YouTube Kotlin Tutorial](https://user-images.githubusercontent.com/71831431/205152449-2b7fec91-9494-4cdc-98d6-5ecefcc9c3d4.png)
 * [Draw.IO - For making wireframe](https://draw.io)
