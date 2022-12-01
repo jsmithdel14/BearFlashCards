@@ -24,7 +24,7 @@ class FlashcardScreen : AppCompatActivity() {
         val subject = intent.getStringExtra("subject")
         val diff = intent.getStringExtra("diff")
         val count = intent.getStringExtra("count")
-        val points =intent.getStringExtra("points")
+        var points =intent.getStringExtra("points")
 
 
         FirebaseApp.initializeApp(this)
@@ -46,18 +46,25 @@ class FlashcardScreen : AppCompatActivity() {
         qButtonTwo.setOnClickListener{
             // Change this for whatever it may be depending on the question
             val i = Intent(this, TryAgainScreen::class.java)
+            points = (points!!.toInt() - 5).toString()
             startActivity(i)
         }
         val qButtonThree = findViewById<Button>(R.id.Qbut3)
         qButtonThree.setOnClickListener{
             // Change this for whatever it may be depending on the question
             val i = Intent(this, TryAgainScreen::class.java)
+            if (points != null){
+                points = (points!!.toInt() - 5).toString()
+            }
             startActivity(i)
         }
         val qButtonFour = findViewById<Button>(R.id.Qbut4)
         qButtonFour.setOnClickListener{
             // Change this for whatever it may be depending on the question
             val i = Intent(this, TryAgainScreen::class.java)
+            if (points != null){
+                points = (points!!.toInt() - 5).toString()
+            }
             startActivity(i)
         }
 
