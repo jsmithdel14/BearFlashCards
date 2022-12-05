@@ -3,9 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_menu"
-    android:background="#b0bcab"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#b0bcab">
 
     <Button
         android:id="@+id/backbutton"
@@ -13,9 +13,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
+        android:backgroundTint="#ffffff"
         android:text="Back"
         android:textColor="#5a4947"
-        android:backgroundTint="#ffffff"
         app:layout_constraintBottom_toTopOf="@+id/optionmessage"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -61,14 +61,12 @@
         android:id="@+id/linearLayout"
         android:layout_width="342dp"
         android:layout_height="150dp"
-        android:layout_marginStart="35dp"
         android:layout_marginTop="43dp"
-        android:layout_marginEnd="34dp"
         android:layout_marginBottom="279dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/optionmessage"
         app:layout_constraintVertical_bias="0.0">
@@ -77,25 +75,25 @@
             android:id="@+id/historybutton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="#ffffff"
             android:text="History"
-            android:textColor="#5a4947"
-            android:backgroundTint="#ffffff"/>
+            android:textColor="#5a4947" />
 
         <Button
             android:id="@+id/mathbutton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="#ffffff"
             android:text="Math"
-            android:textColor="#5a4947"
-            android:backgroundTint="#ffffff"/>
+            android:textColor="#5a4947" />
 
         <Button
             android:id="@+id/sciencebutton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="#ffffff"
             android:text="Science"
-            android:textColor="#5a4947"
-            android:backgroundTint="#ffffff"/>
+            android:textColor="#5a4947" />
 
     </LinearLayout>
 
@@ -106,9 +104,9 @@
         android:layout_marginTop="36dp"
         android:text="Choose from an option below: "
         android:textAlignment="center"
+        android:textColor="#5a4947"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:textColor="#5a4947"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
