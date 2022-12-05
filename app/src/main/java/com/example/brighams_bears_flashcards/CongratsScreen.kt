@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 class CongratsScreen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        supportActionBar?.hide()
         setContentView(R.layout.congrats_scn)
 
         val intent = getIntent()

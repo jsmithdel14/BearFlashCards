@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 class LevelMenu : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        supportActionBar?.hide()
         setContentView(R.layout.level_menu)
 
         val intent = getIntent()

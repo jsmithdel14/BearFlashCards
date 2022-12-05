@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 class MainMenu  : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        supportActionBar?.hide()
         setContentView(R.layout.main_menu)
 
         val backButton = findViewById<Button>(R.id.backbutton)
