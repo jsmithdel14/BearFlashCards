@@ -18,6 +18,7 @@ class FlashcardScreen : AppCompatActivity() {
     private lateinit var db : FirebaseFirestore
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        supportActionBar?.hide()
         setContentView(R.layout.flachcard_wbutt_scn)
 
         val intent = intent
@@ -98,6 +99,7 @@ class FlashcardScreen : AppCompatActivity() {
 
                     else if (count != null) {
                         if (count.equals((result.data!!.size + 1).toString())) {
+                            supportActionBar?.hide()
                             setContentView(R.layout.finish_set)
 
                             val finalPoints = findViewById<TextView>(R.id.pointsCounterFinal)

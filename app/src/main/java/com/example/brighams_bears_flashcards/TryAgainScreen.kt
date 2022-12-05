@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 class TryAgainScreen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        supportActionBar?.hide()
         setContentView(R.layout.try_again_scn)
 
         val intent = getIntent()
