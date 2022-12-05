@@ -21,9 +21,6 @@ class TryAgainScreen : AppCompatActivity() {
             points = (points.toInt() - 5).toString()
         }
 
-        val tryAgain2 = findViewById<TextView>(R.id.tryAgain)
-        tryAgain2.text = points
-
         val tryAgain = findViewById<Button>(R.id.try_aga)
         tryAgain.setOnClickListener{
             val i = Intent(this, FlashcardScreen::class.java)
