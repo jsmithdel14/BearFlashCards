@@ -10,48 +10,43 @@
         android:id="@+id/Qbut4"
         android:layout_width="138dp"
         android:layout_height="115dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="2dp"
-        android:layout_marginBottom="61dp"
         android:backgroundTint="#ffffff"
         android:text="@string/buttopt4"
         android:textColor="#5A4947"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.817"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/Qbut3"
         app:layout_constraintTop_toBottomOf="@+id/Qbut2"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.5" />
 
     <Button
         android:id="@+id/Qbut3"
         android:layout_width="138dp"
         android:layout_height="115dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="37dp"
-        android:layout_marginBottom="68dp"
         android:backgroundTint="#ffffff"
         android:text="@string/buttopt3"
         android:textColor="#5A4947"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/Qbut4"
-        app:layout_constraintHorizontal_bias="0.402"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Qbut1"
-        app:layout_constraintVertical_bias="0.125" />
+        app:layout_constraintVertical_bias="0.5" />
 
     <Button
         android:id="@+id/Qbut2"
         android:layout_width="138dp"
         android:layout_height="115dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginBottom="212dp"
         android:backgroundTint="#ffffff"
         android:text="@string/buttopt2"
         android:textColor="#5A4947"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/Qbut1" />
+        app:layout_constraintBottom_toTopOf="@+id/Qbut4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/Qbut1"
+        app:layout_constraintTop_toBottomOf="@+id/Q_text"
+        app:layout_constraintVertical_bias="0.5" />
 
     <TextView
         android:id="@+id/Q_text"
@@ -71,14 +66,15 @@
         style="Button.white"
         android:layout_width="138dp"
         android:layout_height="115dp"
-        android:layout_marginBottom="212dp"
         android:backgroundTint="#ffffff"
         android:text="@string/buttopt1"
         android:textColor="#5A4947"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.157"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/Qbut3"
+        app:layout_constraintEnd_toStartOf="@+id/Qbut2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Q_text"
+        app:layout_constraintVertical_bias="0.5" />
 
     <ImageButton
         android:id="@+id/imageButton3"
